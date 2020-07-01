@@ -14,7 +14,7 @@ def printLN(ln):
   print(s)
 
 def rotateRight(head: ListNode, k: int) -> ListNode:
-  # if linkedlist length is 0 or 1
+  # If linkedlist length is 0 or 1
   if head is None or head.next is None:
     return head
   # Iterate to end of list, counting nodes
@@ -26,13 +26,12 @@ def rotateRight(head: ListNode, k: int) -> ListNode:
   # Don't waste time doing extra work on a "360" rotation
   if numNodes == k:
     return head
-  # reduce k
+  # Reduce k
   k = k % numNodes
   # Make cycle
   p.next = head
   # Determine amount of times to move head to the right
   rotateNum = 0
-  print('numNodes: ', numNodes)
   if numNodes > k:
     rotateNum = numNodes - k
   else:
