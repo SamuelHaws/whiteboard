@@ -15,7 +15,7 @@ def merge(intervals):
   # Iteration index
   i = 1
   newIntervals = []
-  # Stores the original indexes of new interval to add
+  # Stores the values of new interval to add
   x = xs[0]
   y = ys[0]
   # Iterate through lists
